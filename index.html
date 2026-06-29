@@ -206,9 +206,9 @@
               <div class="mb-1 flex items-center justify-between">
                 <p class="text-[12px] font-500 text-ink">Conversion rate over time</p>
                 <div class="flex items-center gap-3 text-[11px]">
-                  <span class="flex items-center gap-1.5 text-ink-muted"><span class="h-2 w-2 rounded-full bg-clay-500"></span>Variant B</span>
-                  <span class="flex items-center gap-1.5 text-ink-muted"><span class="h-2 w-2 rounded-full bg-loom-400"></span>Variant A</span>
-                  <span class="flex items-center gap-1.5 text-ink-muted"><span class="h-2 w-2 rounded-full bg-line"></span>Baseline</span>
+                  <span class="flex items-center gap-1.5 text-ink-muted"><svg width="20" height="8" aria-hidden="true"><line x1="1" y1="4" x2="19" y2="4" stroke="#b23a66" stroke-width="3" stroke-linecap="round"/></svg>Variant B <span class="ml-0.5 rounded bg-clay-100 px-1 font-600 text-clay-700">winner</span></span>
+                  <span class="flex items-center gap-1.5 text-ink-muted"><svg width="20" height="8" aria-hidden="true"><line x1="1" y1="4" x2="19" y2="4" stroke="#316522" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/></svg>Variant A</span>
+                  <span class="flex items-center gap-1.5 text-ink-muted"><svg width="20" height="8" aria-hidden="true"><line x1="1" y1="4" x2="19" y2="4" stroke="#bdaaac" stroke-width="2" stroke-dasharray="1.5 4" stroke-linecap="round"/></svg>Baseline</span>
                 </div>
               </div>
               <svg viewBox="0 0 720 200" class="w-full" role="img" aria-label="Line chart showing variant B conversion rising above variant A and baseline over 14 days">
@@ -233,14 +233,17 @@
                   <text x="8" y="159">0%</text>
                 </g>
                 <!-- baseline (flat dashed) -->
-                <path d="M40 120 H710" stroke="#d3c2c4" stroke-width="2" stroke-dasharray="4 5"/>
+                <path d="M40 120 H710" stroke="#bdaaac" stroke-width="1.75" stroke-dasharray="1.5 5" stroke-linecap="round"/>
                 <!-- variant A -->
-                <path d="M40 128 L96 124 L152 120 L208 122 L264 116 L320 114 L376 110 L432 108 L488 106 L544 104 L600 102 L656 100 L710 99" fill="none" stroke="#549a3f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="draw draw-delay" pathLength="1"/>
+                <path d="M40 128 L96 124 L152 120 L208 122 L264 116 L320 114 L376 110 L432 108 L488 106 L544 104 L600 102 L656 100 L710 99" fill="none" stroke="#316522" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
                 <!-- variant B area + line -->
                 <path d="M40 126 L96 118 L152 110 L208 96 L264 88 L320 74 L376 66 L432 58 L488 52 L544 48 L600 44 L656 40 L710 36 L710 155 L40 155 Z" fill="url(#fillB)"/>
-                <path d="M40 126 L96 118 L152 110 L208 96 L264 88 L320 74 L376 66 L432 58 L488 52 L544 48 L600 44 L656 40 L710 36" fill="none" stroke="#b23a66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="draw" pathLength="1"/>
+                <path d="M40 126 L96 118 L152 110 L208 96 L264 88 L320 74 L376 66 L432 58 L488 52 L544 48 L600 44 L656 40 L710 36" fill="none" stroke="#b23a66" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="draw" pathLength="1"/>
                 <!-- endpoint marker -->
                 <circle cx="710" cy="36" r="4.5" fill="#fffcfb" stroke="#b23a66" stroke-width="3"/>
+                <!-- direct line labels (color-independent identification, CVD-safe) -->
+                <text x="690" y="29" fill="#b23a66" font-size="12" font-weight="700" font-family="Inter, sans-serif">B</text>
+                <text x="690" y="113" fill="#316522" font-size="12" font-weight="700" font-family="Inter, sans-serif">A</text>
                 <!-- annotation -->
                 <g>
                   <line x1="320" y1="74" x2="320" y2="20" stroke="#b23a66" stroke-width="1" stroke-dasharray="3 3"/>
@@ -272,7 +275,7 @@
                 </thead>
                 <tbody class="divide-y divide-line text-ink-soft">
                   <tr class="bg-clay-50/60">
-                    <td class="px-3 py-2.5 font-mono text-[11px]"><span class="mr-1.5 inline-block h-2 w-2 rounded-full bg-clay-500"></span>run-047b</td>
+                    <td class="px-3 py-2.5 font-mono text-[11px]"><span class="mr-1.5 inline-grid h-4 w-4 place-items-center rounded-[4px] bg-clay-500 align-middle text-[8px] font-600 text-paper-card" aria-hidden="true">B</span>run-047b</td>
                     <td class="px-3 py-2.5"><span class="rounded-md bg-clay-100 px-2 py-0.5 font-500 text-clay-700">Lifestyle photo</span></td>
                     <td class="hidden px-3 py-2.5 font-mono sm:table-cell">9,140</td>
                     <td class="hidden px-3 py-2.5 font-mono sm:table-cell">312</td>
@@ -280,7 +283,7 @@
                     <td class="px-3 py-2.5 text-right font-mono font-500 text-ink">$1,204</td>
                   </tr>
                   <tr>
-                    <td class="px-3 py-2.5 font-mono text-[11px]"><span class="mr-1.5 inline-block h-2 w-2 rounded-full bg-loom-400"></span>run-047a</td>
+                    <td class="px-3 py-2.5 font-mono text-[11px]"><span class="mr-1.5 inline-grid h-4 w-4 place-items-center rounded-[4px] bg-loom-600 align-middle text-[8px] font-600 text-paper-card" aria-hidden="true">A</span>run-047a</td>
                     <td class="px-3 py-2.5"><span class="rounded-md bg-loom-50 px-2 py-0.5 font-500 text-loom-700">Flat-lay photo</span></td>
                     <td class="hidden px-3 py-2.5 font-mono sm:table-cell">8,870</td>
                     <td class="hidden px-3 py-2.5 font-mono sm:table-cell">221</td>
@@ -288,7 +291,7 @@
                     <td class="px-3 py-2.5 text-right font-mono">$892</td>
                   </tr>
                   <tr>
-                    <td class="px-3 py-2.5 font-mono text-[11px]"><span class="mr-1.5 inline-block h-2 w-2 rounded-full bg-line"></span>baseline</td>
+                    <td class="px-3 py-2.5 font-mono text-[11px]"><span class="mr-1.5 inline-grid h-4 w-4 place-items-center rounded-[4px] border border-ink-muted/35 align-middle text-[9px] font-600 leading-none text-ink-muted" aria-hidden="true">–</span>baseline</td>
                     <td class="px-3 py-2.5"><span class="rounded-md bg-paper-sand px-2 py-0.5 font-500 text-ink-muted">Original</span></td>
                     <td class="hidden px-3 py-2.5 font-mono sm:table-cell">8,640</td>
                     <td class="hidden px-3 py-2.5 font-mono sm:table-cell">198</td>
