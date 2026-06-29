@@ -10,7 +10,7 @@ sellers doing $5K+/month.
 A single self-contained `index.html` landing page — hero, product-dashboard mockup,
 features, how-it-works, pricing, testimonials, and CTA. No build step.
 
-- **Tailwind CSS** via CDN (with an inline config for the custom clay / loom / paper palette)
+- **Tailwind CSS** via CDN (with an inline config for the custom "Berry Loom" palette — hand-dyed berry primary, olive-green growth metrics, amber accents on warm linen)
 - **Fonts:** Fraunces (display) + Inter (body) + Spline Sans Mono (data labels) via Google Fonts
 - All icons, charts, and avatars are **inline SVG** — no remote images, works fully offline
 - Responsive, accessible, smooth-scroll, with tasteful micro-interactions

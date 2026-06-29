@@ -14,12 +14,12 @@
     theme: {
       extend: {
         colors: {
-          ink:    { DEFAULT: '#1c1714', soft: '#2c2521', muted: '#6b5f56' },
-          paper:  { DEFAULT: '#f7f2ea', card: '#fffdf9', sand: '#efe6d8' },
-          clay:   { 50:'#fbeee7', 100:'#f6d8c8', 200:'#eab199', 400:'#d9764a', 500:'#c25e34', 600:'#a84d28', 700:'#8a3e1f' },
-          loom:   { 50:'#e8f0ec', 100:'#c4ddd1', 200:'#8fc2ad', 400:'#3f9272', 500:'#2c7a5d', 600:'#1f6149', 700:'#164a37' },
-          gold:   { 400:'#e0a93f', 500:'#c98f23' },
-          line:   '#e4d8c7',
+          ink:    { DEFAULT: '#221a1e', soft: '#352730', muted: '#695764' },
+          paper:  { DEFAULT: '#f8f3f1', card: '#fffcfb', sand: '#efe4e3' },
+          clay:   { 50:'#fbe9ef', 100:'#f5cdda', 200:'#e89db4', 400:'#cb4f7c', 500:'#b23a66', 600:'#962c52', 700:'#76203f' },
+          loom:   { 50:'#e9f2e6', 100:'#cae2c2', 200:'#9bcb8c', 400:'#549a3f', 500:'#41802e', 600:'#316522', 700:'#244b19' },
+          gold:   { 400:'#e0aa46', 500:'#c88f26' },
+          line:   '#ecdcdd',
         },
         fontFamily: {
           display: ['Fraunces', 'serif'],
@@ -30,9 +30,9 @@
         spacing: { '4.5': '1.125rem' },
         fontWeight: { 450: '450', 500: '500', 600: '600' },
         boxShadow: {
-          card: '0 1px 2px rgba(28,23,20,0.04), 0 12px 32px -12px rgba(28,23,20,0.12)',
-          soft: '0 1px 2px rgba(28,23,20,0.04), 0 6px 18px -8px rgba(28,23,20,0.10)',
-          glow: '0 24px 60px -24px rgba(194,94,52,0.35)',
+          card: '0 1px 2px rgba(34,26,30,0.04), 0 12px 32px -12px rgba(34,26,30,0.12)',
+          soft: '0 1px 2px rgba(34,26,30,0.04), 0 6px 18px -8px rgba(34,26,30,0.10)',
+          glow: '0 24px 60px -24px rgba(178,58,102,0.35)',
         },
       },
     },
@@ -40,12 +40,12 @@
 </script>
 <style>
   html { scroll-behavior: smooth; }
-  body { background-color: #f7f2ea; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-  ::selection { background: #eab199; color: #1c1714; }
-  .grain { background-image: radial-gradient(circle at 1px 1px, rgba(28,23,20,0.04) 1px, transparent 0); background-size: 22px 22px; }
-  .ring-line { box-shadow: inset 0 0 0 1px #e4d8c7; }
+  body { background-color: #f8f3f1; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  ::selection { background: #e89db4; color: #221a1e; }
+  .grain { background-image: radial-gradient(circle at 1px 1px, rgba(34,26,30,0.04) 1px, transparent 0); background-size: 22px 22px; }
+  .ring-line { box-shadow: inset 0 0 0 1px #ecdcdd; }
   .nav-link { position: relative; }
-  .nav-link::after { content:''; position:absolute; left:0; bottom:-4px; height:1.5px; width:0; background:#c25e34; transition:width .25s ease; }
+  .nav-link::after { content:''; position:absolute; left:0; bottom:-4px; height:1.5px; width:0; background:#b23a66; transition:width .25s ease; }
   .nav-link:hover::after { width:100%; }
   .feature-card { transition: transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease, border-color .3s ease; }
   .feature-card:hover { transform: translateY(-4px); }
@@ -66,7 +66,7 @@
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8" aria-label="Primary">
     <a href="#top" class="flex items-center gap-2.5">
       <span class="grid h-9 w-9 place-items-center rounded-xl bg-ink text-paper shadow-soft" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 5c4 3 10 3 14 0M5 12c4 3 10 3 14 0M5 19c4 3 10 3 14 0" stroke="#e0a93f" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 5c4 3 10 3 14 0M5 12c4 3 10 3 14 0M5 19c4 3 10 3 14 0" stroke="#e0aa46" stroke-width="1.8" stroke-linecap="round"/></svg>
       </span>
       <span class="font-display text-[1.35rem] font-600 tracking-tight">Skein</span>
     </a>
@@ -100,7 +100,7 @@
       </span>
       <h1 class="mt-6 font-display text-[2.6rem] font-500 leading-[1.05] tracking-tight text-ink sm:text-6xl">
         Run your shop like a
-        <span class="relative whitespace-nowrap"><span class="relative z-10 italic text-clay-600">lab</span><svg class="absolute -bottom-1 left-0 z-0 w-full" height="14" viewBox="0 0 120 14" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c30-7 86-7 116 0" stroke="#e0a93f" stroke-width="3.5" stroke-linecap="round"/></svg></span>,
+        <span class="relative whitespace-nowrap"><span class="relative z-10 italic text-clay-600">lab</span><svg class="absolute -bottom-1 left-0 z-0 w-full" height="14" viewBox="0 0 120 14" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c30-7 86-7 116 0" stroke="#e0aa46" stroke-width="3.5" stroke-linecap="round"/></svg></span>,
         not a guess.
       </h1>
       <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
@@ -214,41 +214,41 @@
               <svg viewBox="0 0 720 200" class="w-full" role="img" aria-label="Line chart showing variant B conversion rising above variant A and baseline over 14 days">
                 <defs>
                   <linearGradient id="fillB" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0" stop-color="#c25e34" stop-opacity="0.18"/>
-                    <stop offset="1" stop-color="#c25e34" stop-opacity="0"/>
+                    <stop offset="0" stop-color="#b23a66" stop-opacity="0.18"/>
+                    <stop offset="1" stop-color="#b23a66" stop-opacity="0"/>
                   </linearGradient>
                 </defs>
                 <!-- grid -->
-                <g stroke="#e4d8c7" stroke-width="1">
+                <g stroke="#ecdcdd" stroke-width="1">
                   <line x1="40" y1="20" x2="710" y2="20"/>
                   <line x1="40" y1="65" x2="710" y2="65"/>
                   <line x1="40" y1="110" x2="710" y2="110"/>
                   <line x1="40" y1="155" x2="710" y2="155"/>
                 </g>
                 <!-- y labels -->
-                <g fill="#6b5f56" font-size="10" font-family="Spline Sans Mono, monospace">
+                <g fill="#695764" font-size="10" font-family="Spline Sans Mono, monospace">
                   <text x="8" y="24">6%</text>
                   <text x="8" y="69">4%</text>
                   <text x="8" y="114">2%</text>
                   <text x="8" y="159">0%</text>
                 </g>
                 <!-- baseline (flat dashed) -->
-                <path d="M40 120 H710" stroke="#cdbfa9" stroke-width="2" stroke-dasharray="4 5"/>
+                <path d="M40 120 H710" stroke="#d3c2c4" stroke-width="2" stroke-dasharray="4 5"/>
                 <!-- variant A -->
-                <path d="M40 128 L96 124 L152 120 L208 122 L264 116 L320 114 L376 110 L432 108 L488 106 L544 104 L600 102 L656 100 L710 99" fill="none" stroke="#3f9272" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="draw draw-delay" pathLength="1"/>
+                <path d="M40 128 L96 124 L152 120 L208 122 L264 116 L320 114 L376 110 L432 108 L488 106 L544 104 L600 102 L656 100 L710 99" fill="none" stroke="#549a3f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="draw draw-delay" pathLength="1"/>
                 <!-- variant B area + line -->
                 <path d="M40 126 L96 118 L152 110 L208 96 L264 88 L320 74 L376 66 L432 58 L488 52 L544 48 L600 44 L656 40 L710 36 L710 155 L40 155 Z" fill="url(#fillB)"/>
-                <path d="M40 126 L96 118 L152 110 L208 96 L264 88 L320 74 L376 66 L432 58 L488 52 L544 48 L600 44 L656 40 L710 36" fill="none" stroke="#c25e34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="draw" pathLength="1"/>
+                <path d="M40 126 L96 118 L152 110 L208 96 L264 88 L320 74 L376 66 L432 58 L488 52 L544 48 L600 44 L656 40 L710 36" fill="none" stroke="#b23a66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="draw" pathLength="1"/>
                 <!-- endpoint marker -->
-                <circle cx="710" cy="36" r="4.5" fill="#fffdf9" stroke="#c25e34" stroke-width="3"/>
+                <circle cx="710" cy="36" r="4.5" fill="#fffcfb" stroke="#b23a66" stroke-width="3"/>
                 <!-- annotation -->
                 <g>
-                  <line x1="320" y1="74" x2="320" y2="20" stroke="#c25e34" stroke-width="1" stroke-dasharray="3 3"/>
-                  <rect x="294" y="6" width="134" height="18" rx="9" fill="#fbeee7"/>
-                  <text x="304" y="18" fill="#8a3e1f" font-size="10" font-family="Inter, sans-serif" font-weight="600">photo swapped · day 6</text>
+                  <line x1="320" y1="74" x2="320" y2="20" stroke="#b23a66" stroke-width="1" stroke-dasharray="3 3"/>
+                  <rect x="294" y="6" width="134" height="18" rx="9" fill="#fbe9ef"/>
+                  <text x="304" y="18" fill="#76203f" font-size="10" font-family="Inter, sans-serif" font-weight="600">photo swapped · day 6</text>
                 </g>
                 <!-- x labels -->
-                <g fill="#6b5f56" font-size="10" font-family="Spline Sans Mono, monospace">
+                <g fill="#695764" font-size="10" font-family="Spline Sans Mono, monospace">
                   <text x="36" y="178">Day 1</text>
                   <text x="300" y="178">Day 6</text>
                   <text x="560" y="178">Day 11</text>
@@ -512,10 +512,10 @@
         <figcaption class="mt-6 flex items-center gap-3 border-t border-line pt-5">
           <span class="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-clay-100 ring-1 ring-clay-200" aria-hidden="true">
             <svg width="44" height="44" viewBox="0 0 44 44">
-              <circle cx="22" cy="22" r="22" fill="#f6d8c8"/>
-              <path d="M16 12c0-2 12-2 12 0v2c0 1.5-12 1.5-12 0v-2z" fill="#a84d28" opacity="0.22"/>
-              <path d="M14 30c0-4 2-6 8-6s8 2 8 6v2H14v-2z" fill="#a84d28" opacity="0.22"/>
-              <text x="22" y="28" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#8a3e1f">CB</text>
+              <circle cx="22" cy="22" r="22" fill="#f5cdda"/>
+              <path d="M16 12c0-2 12-2 12 0v2c0 1.5-12 1.5-12 0v-2z" fill="#962c52" opacity="0.22"/>
+              <path d="M14 30c0-4 2-6 8-6s8 2 8 6v2H14v-2z" fill="#962c52" opacity="0.22"/>
+              <text x="22" y="28" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#76203f">CB</text>
             </svg>
           </span>
           <div>
@@ -540,12 +540,12 @@
         <figcaption class="mt-6 flex items-center gap-3 border-t border-line pt-5">
           <span class="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-loom-100 ring-1 ring-loom-200" aria-hidden="true">
             <svg width="44" height="44" viewBox="0 0 44 44">
-              <circle cx="22" cy="22" r="22" fill="#c4ddd1"/>
-              <g stroke="#1f6149" stroke-width="1.4" opacity="0.22">
+              <circle cx="22" cy="22" r="22" fill="#cae2c2"/>
+              <g stroke="#316522" stroke-width="1.4" opacity="0.22">
                 <path d="M9 14h26M9 22h26M9 30h26"/>
                 <path d="M15 8v28M22 8v28M29 8v28"/>
               </g>
-              <text x="22" y="28" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#164a37">ML</text>
+              <text x="22" y="28" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#244b19">ML</text>
             </svg>
           </span>
           <div>
@@ -570,9 +570,9 @@
         <figcaption class="mt-6 flex items-center gap-3 border-t border-line pt-5">
           <span class="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-gold-400/20 ring-1 ring-gold-400/40" aria-hidden="true">
             <svg width="44" height="44" viewBox="0 0 44 44">
-              <circle cx="22" cy="22" r="22" fill="#f4e4c2"/>
-              <path d="M22 7c4 4 5 7 5 10a5 5 0 11-10 0c0-2 1-4 3-6 0 2 1 3 2 3 1 0 1.5-1 1-3-.5-2-1.5-4-1-7z" fill="#c98f23" opacity="0.28"/>
-              <text x="22" y="29" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#8a3e1f">DA</text>
+              <circle cx="22" cy="22" r="22" fill="#f6e6c2"/>
+              <path d="M22 7c4 4 5 7 5 10a5 5 0 11-10 0c0-2 1-4 3-6 0 2 1 3 2 3 1 0 1.5-1 1-3-.5-2-1.5-4-1-7z" fill="#c88f26" opacity="0.28"/>
+              <text x="22" y="29" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="17" fill="#76203f">DA</text>
             </svg>
           </span>
           <div>
@@ -617,7 +617,7 @@
       <div class="lg:col-span-2">
         <a href="#top" class="flex items-center gap-2.5">
           <span class="grid h-9 w-9 place-items-center rounded-xl bg-ink text-paper" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 5c4 3 10 3 14 0M5 12c4 3 10 3 14 0M5 19c4 3 10 3 14 0" stroke="#e0a93f" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 5c4 3 10 3 14 0M5 12c4 3 10 3 14 0M5 19c4 3 10 3 14 0" stroke="#e0aa46" stroke-width="1.8" stroke-linecap="round"/></svg>
           </span>
           <span class="font-display text-xl font-600 tracking-tight text-ink">Skein</span>
         </a>
